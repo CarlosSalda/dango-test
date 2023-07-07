@@ -1,0 +1,68 @@
+.card {
+    border: 2px solid black;
+    max-height: 572px;
+}
+
+.gallery {
+    display: grid;
+    gap: 1rem;
+    grid-auto-rows: 40rem;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+
+.quantity-span {
+    border: 1px solid black;
+    display: inline-block;
+    width: 20%;
+    text-align: center;
+}
+
+.img-card {
+    width: 100%;
+    height: auto;
+    padding-bottom: 15px;
+}
+
+.button-card {
+    text-decoration: underline;
+    background-color: #E6E4E3;
+}
+
+.div-left {
+    text-align: left;
+}
+
+.value-span {
+    font-size: 20px;
+}
+
+.description-card {
+    font-size: 13px;
+    padding-bottom: 15px;
+    color: grey;
+}
+
+.a-card {
+    color: #4456F3
+}
+
+.a-card:hover {
+    text-decoration: underline;
+}
+
+.icon-edit {
+    margin-left: 105%;
+    margin-top: -15%;
+    color: #5e93f7;
+}
+
+.icon-edit:hover {
+    color: #4456F3;
+}
+
+.not-changing {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+}
