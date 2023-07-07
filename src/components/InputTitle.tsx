@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import '../styles/inputTitle.css'
-import {TitleContext, IndexContext, CartContext, CurrentDataContext} from '../App.tsx';
+import {IndexContext, CurrentDataContext} from '../App.tsx';
 
 
 interface TextInputProps {
