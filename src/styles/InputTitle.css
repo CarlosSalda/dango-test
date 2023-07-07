@@ -1,0 +1,15 @@
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #000;
+    border: 1px solid #000;
+    text-align: center;
+}
+
+.centered-div {
+  display: grid;
+  gap: 0.7rem;
+  grid-auto-rows: 2.7 rem;
+  grid-template-columns: repeat(1, minmax(1rem, 1fr));
+}
