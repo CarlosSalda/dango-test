@@ -1,6 +1,6 @@
 import React, {useState, useContext } from 'react';
 import '../styles/card.css'
-import { TitleContext, IndexContext, CartContext, CurrentDataContext } from '../App.tsx';
+import {CartContext, CurrentDataContext } from '../App.tsx';
 
 interface MyData {
     name: string;
@@ -23,8 +23,8 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = ({ image, value, description, quantity, name, index, updateIndex,updateAddCart }) => {
     const [nameState, setNameState] = useState<string>(name);
-    const [valueState, setValue] = useState<number>(value);
-    const [descriptionState, setDescription] = useState<string>(description);
+    const [valueState] = useState<number>(value);
+    const [descriptionState] = useState<string>(description);
     const [quantityState, setQuantity] = useState<number>(quantity);
     const data = useContext(CurrentDataContext);
     const cart = useContext(CartContext);
@@ -68,7 +68,7 @@ const Card: React.FC<CardProps> = ({ image, value, description, quantity, name, 
 
     const handleAdd = () => {
         const value = cart
-        updateAddCart(cart + quantityState);
+        updateAddCart(value + quantityState);
     }
 
     return (
